@@ -5,8 +5,12 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      
-    );
+    return const SafeArea(
+        child: Scaffold(
+      body: Text(
+        'Book a Ride to Space',
+        style: TextStyle(fontSize: 43, color: Color.fromRGBO(255, 255, 255, 1)),
+      ),
+    ));
   }
 }
