@@ -7,14 +7,15 @@ void main() {
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home: const HomePage(),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Color.fromRGBO(31, 31, 31, 1),
+        scaffoldBackgroundColor: Color.fromRGBO(0, 0, 0, 1),        
       ),
     );
   }
