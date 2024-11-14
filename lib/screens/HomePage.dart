@@ -11,10 +11,11 @@ class HomePage extends StatelessWidget {
             body: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-          _homeHeaderWidget(),
-          _mainImageWidget(context),
-          _startedButtonWidget(context)
-        ])));
+                _homeHeaderWidget(),
+                _mainImageWidget(context),
+                _startedButtonWidget(context),
+              ],
+            )));
   }
 
   Widget _homeHeaderWidget() {
@@ -32,7 +33,7 @@ class HomePage extends StatelessWidget {
   Widget _mainImageWidget(context) {
     var _deviceHeight = MediaQuery.of(context).size.height;
     return Container(
-      height: _deviceHeight * 0.65,
+      height: _deviceHeight * 0.7,
       decoration: const BoxDecoration(
           image: DecorationImage(
               image: AssetImage("assets/images/astro.png"),
